@@ -1,0 +1,4 @@
+dev/isar/isar_flutter_libs/IsarFlutterLibsPlugin.java
+ dev.isar.isar_flutter_libs.IsarFlutterLibsPlugin
+dev/isar/isar_flutter_libs/BuildConfig.java
+ dev.isar.isar_flutter_libs.BuildConfig
