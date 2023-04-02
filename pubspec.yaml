@@ -11,17 +11,21 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-    assets:
-      - assets/images/empty_list_icon.png
-      - assets/images/todo_list_icon.png
-  
+
   provider:
   
-  # Isar DB
+  #Isar DB
   isar: ^2.5.0
   isar_flutter_libs: ^2.5.0
   path_provider:
   universal_io: ^2.2.0
+
+
+flutter:
+  uses-material-design: true
+  assets:
+      - assets/images/empty_list_icon.png
+      - assets/images/todo_list_icon.png
 
 
 
@@ -30,15 +34,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  # Isar DB
-  # isar_generator:
-  # build_runner:
-
   flutter_lints: ^1.0.0
   isar_generator: ^2.5.0
   build_runner: ^2.2.0
-
-flutter:
-
-  uses-material-design: true
 
