@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:todo_app/provider/theme_provider.dart';
 
 final lightTheme = ThemeData(
@@ -34,6 +35,11 @@ class ThemeSwitcher extends StatefulWidget {
 
 class _ThemeSwitcherState extends State<ThemeSwitcher> {
 
+  void savaTheme(bool dark) async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool('dark_mode', dark);
+  }
+
   @override
   Widget build(BuildContext context) {
     return IconButton(
@@ -45,9 +51,11 @@ class _ThemeSwitcherState extends State<ThemeSwitcher> {
           ThemeData theme = Provider.of<ThemeProvider>(context, listen: false).themeData;
           if(theme == lightTheme){
             Provider.of<ThemeProvider>(context, listen: false).themeData = darkTheme;
+            savaTheme(true);
           }
           else{
             Provider.of<ThemeProvider>(context, listen: false).themeData = lightTheme;
+            savaTheme(false);
           }
         }
     );

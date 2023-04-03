@@ -156,9 +156,9 @@
       "description": "Coupons, compare savings and save money while you shop",
       "icon": {
          "raster_icon": {
-            "dark_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_shopping_maximal_dark.png/1.3.11/asset",
-            "high_contrast": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_shopping_hc.png/1.3.11/asset",
-            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_shopping_maximal_light.png/1.3.11/asset"
+            "dark_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_shopping_maximal_dark.png/1.3.12/asset",
+            "high_contrast": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_shopping_hc.png/1.3.12/asset",
+            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_shopping_maximal_light.png/1.3.12/asset"
          }
       },
       "id": "523b5ef3-0b10-4154-8b62-10b2ebd00921",
@@ -172,10 +172,11 @@
       "on_by_default": true,
       "on_by_default|device:managed": false,
       "surfaces": [ "in_browser_sidebar" ],
+      "surfaces|flight:msEdgeShoppingInEdgeBar": [ "in_browser_sidebar", "standalone_sidebar" ],
       "target": {
          "url": "edge://shopping"
       },
-      "version": "1.3.11"
+      "version": "1.3.12"
    }, {
       "capabilities": {
          "resize_disabled": true
@@ -1257,7 +1258,7 @@
          "show_domain_in_header": true
       },
       "default_locale": "en",
-      "description": "Check your Teams chat while staying in the flow",
+      "description": "Check your chat while staying in the flow",
       "disabled": true,
       "disabled|auth:aad": false,
       "dormancy": {
@@ -1364,8 +1365,8 @@
             "enabled": false,
             "header": "Using Skype"
          },
-         "settings_description": "When a web link is opened from an Skype chat, the side pane will automatically open to show that chat for context.",
-         "settings_title": "Automatically open Skype chat context in the side pane"
+         "settings_description": "When you open a link from a chat in Skype, the side pane will automatically open to show the chat for context.",
+         "settings_title": "Automatically open Skype chat links in the side pane"
       },
       "capabilities": {
          "show_domain_in_header": true
@@ -1376,9 +1377,9 @@
       "flights": [ "msEdgeHubAppSkype" ],
       "icon": {
          "raster_icon": {
-            "dark_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_skype_dark.png/1.3.11/asset",
-            "high_contrast": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_skype_hc.png/1.3.11/asset",
-            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_skype_light.png/1.3.11/asset"
+            "dark_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_skype_dark.png/1.3.13/asset",
+            "high_contrast": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_skype_hc.png/1.3.13/asset",
+            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_skype_light.png/1.3.13/asset"
          }
       },
       "id": "439642fc-998d-4a64-8bb6-940ecaf6b60b",
@@ -1390,11 +1391,12 @@
          "enabled": true
       },
       "target": {
-         "url": "https://web.skype.com/?source=shoreline",
-         "url|flight:msEdgeHubAppLatestSkype": "https://latest.web.skype.com/?source=shoreline"
+         "url": "https://web.skype.com/?browsername=edge_canary_shoreline",
+         "url|flight:msEdgeHubAppLatestSkype": "https://latest.web.skype.com/?browsername=edge_canary_shoreline",
+         "url|flight:msEdgeHubAppSkypeStable": "https://web.skype.com/?browsername=edge_stable_shoreline"
       },
       "trusted_domains": [ "live.com", "office.com", "microsoftonline.com", "microsoft.com", "office365.com", "sharepoint-df.com", "skype.com" ],
-      "version": "1.3.11"
+      "version": "1.3.13"
    }, {
       "default_locale": "en",
       "description": "Improve browser performance and save battery",

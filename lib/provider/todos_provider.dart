@@ -7,7 +7,7 @@ import '../models/todo.dart';
 
 class TodoProvider with ChangeNotifier{
   TodoProvider(){
-    init();
+    mobileInit();
   }
 
   List<Todo> _todos = [];

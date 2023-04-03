@@ -11,10 +11,8 @@ class EmptyPage extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.only(top: 220),
         child: Column(
-        children: const [
-              Image(
-                image: AssetImage('images/todo_list_icon.png'),
-              ),
+        children: const[
+              Icon(Icons.list, size: 100, color: Colors.cyan,),
               Text("there is no working to do :)", style: TextStyle(color: Colors.cyan),)
         ],
       ),

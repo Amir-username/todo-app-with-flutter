@@ -7163,6 +7163,13 @@ path_provider_macos
 path_provider_platform_interface
 path_provider_windows
 plugin_platform_interface
+shared_preferences
+shared_preferences_android
+shared_preferences_foundation
+shared_preferences_linux
+shared_preferences_platform_interface
+shared_preferences_web
+shared_preferences_windows
 xdg_directories
 
 Copyright 2013 The Flutter Authors. All rights reserved.
@@ -11507,8 +11514,7 @@ written authorization of the copyright holder.
 --------------------------------------------------------------------------------
 js
 
-Copyright 2012, the Dart project authors.
-
+Copyright 2012, the Dart project authors. All rights reserved.
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
@@ -11519,7 +11525,7 @@ met:
       copyright notice, this list of conditions and the following
       disclaimer in the documentation and/or other materials provided
       with the distribution.
-    * Neither the name of Google LLC nor the names of its
+    * Neither the name of Google Inc. nor the names of its
       contributors may be used to endorse or promote products derived
       from this software without specific prior written permission.
 
