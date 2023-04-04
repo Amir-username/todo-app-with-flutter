@@ -1,6 +1,6 @@
-.dart_tool/
-.idea/
-android/
+.dart_tool/*
+.idea/*
+android/*
 assets/
 build/
 ios/
