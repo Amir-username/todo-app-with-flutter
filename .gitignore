@@ -1,6 +1,6 @@
-.dart_tool/*
-.idea/*
-android/*
+.dart_tool/
+.idea/
+android/
 assets/
 build/
 ios/
@@ -8,4 +8,9 @@ test/
 web/
 windows/
 
-
+local.properties
+pubspec.lock
+todo_app.iml
+analysis_options.yaml
+.metadata
+.packages
