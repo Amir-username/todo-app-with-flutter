@@ -14,3 +14,5 @@ todo_app.iml
 analysis_options.yaml
 .metadata
 .packages
+.flutter-plugins-dependencies
+.flutter-plugins
