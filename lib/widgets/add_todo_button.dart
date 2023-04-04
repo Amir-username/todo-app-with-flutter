@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:todo_app/models/todo.dart';
@@ -95,13 +97,14 @@ class _AdTododButtonState extends State<AddTodoButton> {
                         color: Colors.cyan,
                       )
                     ),
-                    hintText: 'description',
+                    hintText: 'description(optional)',
                   ),
                 ),
                 const Divider(),
                 FloatingActionButton.extended(
                   onPressed: (){
-                    final todo = Todo()
+                    if (titleController.text.isNotEmpty || statusController.text.isNotEmpty){
+                      final todo = Todo()
                       ..title = titleController.text
                       ..isDone = false
                       ..status = statusController.text
@@ -113,6 +116,16 @@ class _AdTododButtonState extends State<AddTodoButton> {
                     titleController.text = "";
                     statusController.text = "";
                     descController.text = "";
+
+                    }
+                    else {
+                      const snackBar = SnackBar(
+                        content: Text("Please complete title and status field"),
+                        backgroundColor: Colors.cyan,
+                      );
+
+                      ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                    }
 
                     Navigator.pop(context);
                   },
