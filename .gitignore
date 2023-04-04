@@ -1,11 +1,11 @@
-/.dart_tool/*
-/.idea/*
-/android/*
-/assets/*
-/build/*
-/ios/*
-/test/*
-/web/*
-/windows/*
+.dart_tool/*
+.idea/*
+android/*
+assets/*
+build/*
+ios/*
+test/*
+web/*
+windows/*
 
 
